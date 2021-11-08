@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React, { Fragment } from 'react';
+import Navbar from './components/navbar/Navbar';
 import './App.css';
+import Home from './pages/Home';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Qualification from './pages/Qualification';
+import Contact from './pages/Contact';
+import Footer from './components/footer/Footer';
+import ScrollTop from './components/scroll/ScrollTop';
+// import { Route, Switch, BrowserRouter } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <Fragment>
+        <main className="main">
+            <Navbar />
+            <Home />
+            <About />
+            <Skills />
+            <Qualification />
+            <Contact />
+        </main>
+            <Footer />
+            <ScrollTop />
+        </Fragment>
+    )
 }
 
-export default App;
+export default App

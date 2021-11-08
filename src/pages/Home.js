@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   UilLinkedinAlt,
   UilInstagram,
@@ -9,8 +9,16 @@ import {
 } from "@iconscout/react-unicons";
 import ProfileImg from "../images/profile.png";
 import 'animate.css';
+import { init } from 'ityped'
 
 function Home() {
+  
+  const profession = useRef();
+  useEffect(() => {
+      init(profession.current, { showCursor: false, backDelay: 1000,backSpeed: 60, loop: false , strings: ["Writer, Editor, Translator"] });
+    }
+  )
+
   return (
       <section className="home section" id="home">
         <div className="home__container container grid">
@@ -80,7 +88,7 @@ function Home() {
 
             <div className="home__data">
               <h1 className="home__title">Hi, I'm Vanessa</h1>
-              <h3 className="home__subtitle">Writer, Editor, Translator</h3>
+              <h3 className="home__subtitle" ref={profession}>{" "}</h3>
               <p className="home__description">
                 A versatile bilingual writer, editor and translator with over 15
                 years of experience.
@@ -91,7 +99,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="animate__animated animate__shakeY animate__delay-2s animate__slow">
+          <div className="animate__animated animate__shakeY animate__delay-4s animate__slow">
             <a href="#about" className="home__scroll-button button--flex">
               <UilMouseAlt className="home__scroll-mouse" />
               <span className="home__scroll-name">Scroll down</span>

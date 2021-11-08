@@ -320,6 +320,7 @@ img{
     color: var(--text-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
+    height: 1.875rem;
 }
 
 .home__description{

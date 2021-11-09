@@ -696,8 +696,7 @@ img{
 
 .scrollup:hover{
     border-color: var(--first-color-alt) !important;
-    transform: translateY(-.8rem) !important;
-    transition-delay: .2s !important;
+    background-color: var(--first-color);
 }
 
 .scrollup__icon{

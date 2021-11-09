@@ -12,7 +12,7 @@ function ScrollTop() {
             setScrollTop(false)
         }};
     return (
-        <Slide direction="up" in={scrollTop} >
+        <Slide direction="up" in={scrollTop} style={{ transitionDuration: 1000 }} >
             <a href="#home" className="scrollup" id="scroll-up">
             <UilArrowUp className="scrollup__icon" />
             </a>

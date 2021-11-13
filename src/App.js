@@ -8,6 +8,8 @@ import Qualification from './pages/Qualification';
 import Contact from './pages/Contact';
 import Footer from './components/footer/Footer';
 import ScrollTop from './components/scroll/ScrollTop';
+import Loading from './components/loader/Loading';
+import Porfolio from './pages/Porfolio';
 // import { Route, Switch, BrowserRouter } from "react-router-dom";
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
             <About />
             <Skills />
             <Qualification />
+            <Porfolio />
             <Contact />
         </main>
             <Footer />

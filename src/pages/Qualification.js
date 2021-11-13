@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { UilGraduationCap, UilBriefcaseAlt } from '@iconscout/react-unicons';
 // import Grow from '@mui/material/Grow';
-import Education from '../components/sections/Education';
-import Work from '../components/sections/Work';
+import Education from '../components/sections/Qualification/Education';
+import Work from '../components/sections/Qualification/Work';
 
 function Qualification() {
           //------------------------------------ START -> QUALI SHOW & HIDE -------------------------

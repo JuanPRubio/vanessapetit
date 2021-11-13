@@ -180,6 +180,16 @@ img{
     background-color: var(--body-color);
     box-shadow: 0 -1px 4px rgba(0, 0, 0,.15);
 }
+/*==================== LOADER ====================*/
+.loader__container{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;    
+}
 
 /*==================== NAV ====================*/
 .nav{
@@ -567,7 +577,40 @@ img{
 
 
 /*==================== PORTFOLIO ====================*/
+.portfolio__tabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2);
+}
 
+.portfolio__button{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
+
+.portfolio__button:hover{
+    color: var(--first-color);
+}
+
+.portfolio__sections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.portfolio__subcat__button{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
+
+.portfolio__subcat__button:hover{
+    color: var(--first-color);
+}
 
 /*==================== PROJECT IN MIND ====================*/
 
@@ -874,13 +917,27 @@ img{
         grid-template-columns: .5fr;
     }
 
+    .portfolio__tabs{
+        justify-content: center;
+    }
+    .portfolio__button{
+        margin: 0 var(--mb-1);
+    }
+
+    .portfolio__subcat__tabs{
+        justify-content: center;
+    }
+    .portfolio__subcat__button{
+        margin: 0 var(--mb-1);
+    }
+
     .footer__container{
         grid-template-columns: repeat(3, 1fr);
     }
 
-.footer__bg{
-    padding: 3rem 0 3.5rem;
-}
+    .footer__bg{
+        padding: 3rem 0 3.5rem;
+    }
 }
 .footer__links{
     flex-direction: row;

@@ -2,6 +2,16 @@ import React from 'react';
 import { UilPhone, UilEnvelopeEdit, UilMapMarker, UilMessage } from '@iconscout/react-unicons';
 
 function Contact() {
+
+    let form = document.getElementById('contact-form');
+
+    console.log("form", form);
+
+    const submmitForm = (e) => {
+        e.preventDefault();
+        form.submit()
+    }
+
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Contact Me</h2>
@@ -41,34 +51,37 @@ function Contact() {
                     </div>
                 </div>
 
-                <form action="" className="contact__form grid">
+                <form action="https://formsubmit.co/juanpablorubio94@gmail.com" method="POST" className="contact__form grid" id="contact-form">
                     <div className="contact__inputs grid">
                         <div className="contact__content">
                             <label htmlFor="" className="contact__label">Name</label>
-                            <input type="text" className="contact__input" />
+                            <input type="text" className="contact__input" name="name" required />
                         </div>
 
                         <div className="contact__content">
                             <label htmlFor="" className="contact__label">Email</label>
-                            <input type="email" className="contact__input" />
+                            <input type="email" className="contact__input" name="email" required />
                         </div>
                     </div>
 
                     <div className="contact__content">
                             <label htmlFor="" className="contact__label">Project</label>
-                            <input type="text" className="contact__input" />
+                            <input type="text" className="contact__input" name="_subject" required />
                     </div>
 
                     <div className="contact__content">
                             <label htmlFor="" className="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="5" className="contact__input"></textarea>
+                            <textarea cols="0" rows="5" className="contact__input" name="message" required ></textarea>
+                            <input type="text" name="_honey" style={{display:'none'}}/>
+                            <input type="hidden" name="_next" value="https://vanessapetitportfolio.netlify.app/"/>
+                            <input type="hidden" name="_captcha" value="false"/>
                     </div>
 
                     <div>
-                        <a href="#" className="button button--flex">
+                        <button type="submit" className="button button--flex" >
                             Send Message
-                            <UilMessage className="button__icon" />
-                        </a>
+                            <UilMessage className="button__icon" name="subscribe" />
+                        </button>
                     </div>
                 </form>
             </div>
@@ -76,4 +89,4 @@ function Contact() {
     )
 }
 
-export default Contact
+export default Contact;

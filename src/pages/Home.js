@@ -99,7 +99,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="animate__animated animate__shakeY animate__delay-4s animate__slow">
+          <div className="animate__animated animate__shakeY animate__delay-4s animate__slower">
             <a href="#about" className="home__scroll-button button--flex">
               <UilMouseAlt className="home__scroll-mouse" />
               <span className="home__scroll-name">Scroll down</span>

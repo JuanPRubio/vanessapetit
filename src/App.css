@@ -314,7 +314,8 @@ img{
 }
 
 .home__blob-img{
-    width: 450px;
+    /* width: 450px; */
+    width: 200px;
 }
 
 .home__data{
@@ -499,9 +500,9 @@ img{
     background-color: var(--first-color);
 }
 
-.skills__entoes{
+/* .skills__entoes{
     width: 95%;
-}
+} */
 
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs{
@@ -587,6 +588,8 @@ img{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     cursor: pointer;
+    border-radius: 5px;
+    padding: var(--mb-0-5);
 }
 
 .portfolio__button:hover{
@@ -606,6 +609,8 @@ img{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     cursor: pointer;
+    border-radius: 5px;
+    padding: var(--mb-0-25);
 }
 
 .portfolio__subcat__button:hover{

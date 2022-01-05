@@ -46,7 +46,7 @@ function Skills() {
                                 <div className="skills__data">
                                     <div className="skills__titles">
                                         <h3 className="skills__name">English to Spanish/ Spanish to English</h3>
-                                        <span className="skills__number">95%</span>
+                                        {/* <span className="skills__number">95%</span> */}
                                     </div>
                                     <div className="skills__bar">
                                         <span className="skills__percentage skills__entoes"></span>
@@ -56,7 +56,7 @@ function Skills() {
                                 <div className="skills__data">
                                     <div className="skills__titles">
                                         <h3 className="skills__name">Transcription</h3>
-                                        <span className="skills__number">100%</span>
+                                        {/* <span className="skills__number">100%</span> */}
                                     </div>
                                     <div className="skills__bar">
                                         <span className="skills__percentage skills__transc"></span>
@@ -85,7 +85,7 @@ function Skills() {
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">Copy editing</h3>
-                                    <span className="skills__number">100%</span>
+                                    {/* <span className="skills__number">100%</span> */}
                                 </div>
                                 <div className="skills__bar">
                                     <span className="skills__percentage skills__editing"></span>
@@ -95,7 +95,7 @@ function Skills() {
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">Proofreading</h3>
-                                    <span className="skills__number">100%</span>
+                                    {/* <span className="skills__number">100%</span> */}
                                 </div>
                                 <div className="skills__bar">
                                     <span className="skills__percentage skills__proof"></span>
@@ -105,7 +105,7 @@ function Skills() {
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">Adapting/localizing</h3>
-                                    <span className="skills__number">100%</span>
+                                    {/* <span className="skills__number">100%</span> */}
                                 </div>
                                 <div className="skills__bar">
                                     <span className="skills__percentage skills__adapt"></span>
@@ -137,7 +137,7 @@ function Skills() {
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">Content Creation: online, blog, magazines, newspapers</h3>
-                                    <span className="skills__number">100%</span>
+                                    {/* <span className="skills__number">100%</span> */}
                                 </div>
                                 <div className="skills__bar">
                                     <span className="skills__percentage skills__editing"></span>
@@ -147,7 +147,7 @@ function Skills() {
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">Newsletters</h3>
-                                    <span className="skills__number">100%</span>
+                                    {/* <span className="skills__number">100%</span> */}
                                 </div>
                                 <div className="skills__bar">
                                     <span className="skills__percentage skills__proof"></span>
@@ -157,7 +157,7 @@ function Skills() {
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">Press Releases</h3>
-                                    <span className="skills__number">100%</span>
+                                    {/* <span className="skills__number">100%</span> */}
                                 </div>
                                 <div className="skills__bar">
                                     <span className="skills__percentage skills__adapt"></span>
@@ -167,7 +167,7 @@ function Skills() {
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">Brochures/ Promotional Materials/ Advertorialss</h3>
-                                    <span className="skills__number">100%</span>
+                                    {/* <span className="skills__number">100%</span> */}
                                 </div>
                                 <div className="skills__bar">
                                     <span className="skills__percentage skills__adapt"></span>

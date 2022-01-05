@@ -41,6 +41,7 @@ function Contact() {
                     </div>
                     </a>
 
+                </div>
                     <div className="contact__information">
                     <UilMapMarker className="contact__icon" />
 
@@ -49,9 +50,8 @@ function Contact() {
                             <span className="contact__subtitle">Oceanside, New York</span>
                         </div>
                     </div>
-                </div>
 
-                <form action="https://formsubmit.co/juanpablorubio94@gmail.com" method="POST" className="contact__form grid" id="contact-form">
+                {/* <form action="https://formsubmit.co/juanpablorubio94@gmail.com" method="POST" className="contact__form grid" id="contact-form">
                     <div className="contact__inputs grid">
                         <div className="contact__content">
                             <label htmlFor="" className="contact__label">Name</label>
@@ -83,7 +83,7 @@ function Contact() {
                             <UilMessage className="button__icon" name="subscribe" />
                         </button>
                     </div>
-                </form>
+                </form> */}
             </div>
         </section>
     )

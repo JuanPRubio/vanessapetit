@@ -1,16 +1,14 @@
 import React, { Fragment, useState } from 'react';
 import { Zoom } from '@mui/material';
 import Card from '../../../card/Card';
-import { printFiles } from './print-files.js';
+import { printFiles } from './digital-files.js';
 
-function Print() {
+function Digital() {
 
     const [subCategoryArray, setSubCategoryArray] = useState({
         beauty: true,
         parenting: false,
-        travel: false,
-        education: false,
-        celebrtiy: false
+        travel: false
     }
     );
       // name = selected subcateg
@@ -18,9 +16,7 @@ function Print() {
         let subCategoryAux = {
             beauty: false,
             parenting: false,
-            travel: false,
-            education: false,
-            celebrtiy: false
+            travel: false
         }
         if (!name) {
         setSubCategoryArray(subCategoryAux)
@@ -43,13 +39,6 @@ function Print() {
                     <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("travel")} style={{color: subCategoryArray.travel? "white":"", backgroundColor: subCategoryArray.travel? "var(--first-color)":""}} >
                             Travel
                     </div>
-                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("education")} style={{color: subCategoryArray.education? "white":"", backgroundColor: subCategoryArray.education? "var(--first-color)":""}} >
-                            Education
-                    </div>
-                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("celebrity")} style={{color: subCategoryArray.celebrity? "white":"", backgroundColor: subCategoryArray.celebrity? "var(--first-color)":""}} >
-                            Celebrity
-                    </div>
-
                 </div>
 
                 <Zoom in={true} timeout={700}>
@@ -69,4 +58,4 @@ function Print() {
     )
 }
 
-export default Print
+export default Digital

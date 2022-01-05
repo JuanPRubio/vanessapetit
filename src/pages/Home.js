@@ -79,8 +79,10 @@ function Home() {
                   <image
                     className="home__blob-img"
                     href={ProfileImg}
-                    y='25'
-                    x='-115'
+                    // y='25'
+                    // x='-115'
+                    y='8'
+                    x='10'
                   />
                 </g>
               </svg>

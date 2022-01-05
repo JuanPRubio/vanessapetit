@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from '../components/carousel/Carousel';
+import Digital from '../components/sections/Portfolio/Digital/Digital';
 import Print from '../components/sections/Portfolio/Print/Print';
 import Translation from '../components/sections/Portfolio/Translation/Translation';
 
@@ -7,6 +8,7 @@ function Porfolio() {
 
     const [categoryArray, setCategoryArray] = useState({
         print: true,
+        digital: false,
         translation: false,
         media: false}
     );
@@ -14,6 +16,7 @@ function Porfolio() {
     const handleClick = (name) => {
         let categoryAux = {
         print: false,
+        digital: false,
         translation: false,
         media: false
         }
@@ -35,6 +38,8 @@ function Porfolio() {
         switch (currentCategory.toString()) {
         case 'print':
             return <Print />
+        case 'digital':
+            return <Digital />
         case 'translation':
             return <Translation />
         case 'media':
@@ -55,13 +60,16 @@ function Porfolio() {
 
             <div className="portfolio__container container">
                 <div className="portfolio__tabs">
-                    <div className="portfolio__button button--flex" onClick={()=> handleClick("print")} style={{color: categoryArray.print? "var(--first-color)":""}} >
+                    <div className="portfolio__button button--flex" onClick={()=> handleClick("print")} style={{color: categoryArray.print? "white":"", backgroundColor: categoryArray.print? "var(--first-color)":""}} >
                             Print
                     </div>
-                    <div className="portfolio__button button--flex" onClick={()=> handleClick("translation")} style={{color: categoryArray.translation? "var(--first-color)":""}} >
+                    <div className="portfolio__button button--flex" onClick={()=> handleClick("digital")} style={{color: categoryArray.digital? "white":"", backgroundColor: categoryArray.digital? "var(--first-color)":""}} >
+                            Digital
+                    </div>
+                    <div className="portfolio__button button--flex" onClick={()=> handleClick("translation")} style={{color: categoryArray.translation? "white":"", backgroundColor: categoryArray.translation? "var(--first-color)":""}} >
                             Translation
                     </div>
-                    <div className="portfolio__button button--flex" onClick={()=> handleClick("media")} style={{color: categoryArray.media? "var(--first-color)":""}} >
+                    <div className="portfolio__button button--flex" onClick={()=> handleClick("media")} style={{color: categoryArray.media? "white":"", backgroundColor: categoryArray.media? "var(--first-color)":""}} >
                             Media
                     </div>
                 </div>

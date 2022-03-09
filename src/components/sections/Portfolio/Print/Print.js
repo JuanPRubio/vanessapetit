@@ -33,7 +33,7 @@ function Print() {
 
     return (
         <Fragment>
-                <div className="portfolio__tabs">
+                {/* <div className="portfolio__tabs">
                     <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("beauty")} style={{color: subCategoryArray.beauty? "white":"", backgroundColor: subCategoryArray.beauty? "var(--first-color)":""}} >
                             Beauty
                     </div>
@@ -50,7 +50,7 @@ function Print() {
                             Celebrity
                     </div>
 
-                </div>
+                </div> */}
 
                 <Zoom in={true} timeout={700}>
                 <div className="portfolio__sections">

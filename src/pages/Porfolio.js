@@ -55,7 +55,7 @@ function Porfolio() {
 
     return (
         <section className="portfolio section" id="portfolio">
-            <h2 className="section__title">Portfolio</h2>
+            <h2 className="section__title">My Work</h2>
             <span className="section__subtitle">Most recent work</span>
 
             <div className="portfolio__container container">

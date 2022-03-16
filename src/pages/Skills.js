@@ -187,12 +187,12 @@ function Skills() {
                                 <h1 className="skills__titles">Proofreader</h1>
                             </div>
 
-                            {skillsArray.skills_3
+                            {skillsArray.skills_4
                             ?<UilAngleDown className="skills__arrow" style={{transform: "rotate(-180deg"}} />
                             :<UilAngleDown className="skills__arrow" />}
                         </div>
 
-                        <Collapse in={skillsArray.skills_3} >
+                        <Collapse in={skillsArray.skills_4} >
                         <div className="skills__list grid">
                             <div className="skills__data">
                                 <div className="skills__titles">

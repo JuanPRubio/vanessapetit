@@ -28,7 +28,7 @@ function Translation() {
 
     return (
         <Fragment>
-                <div className="portfolio__tabs">
+                {/* <div className="portfolio__tabs">
                     <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("parenting")} style={{color: subCategoryArray.parenting? "var(--first-color)":""}} >
                             Parenting
                     </div>
@@ -39,7 +39,7 @@ function Translation() {
                             Press
                     </div>
 
-                </div>
+                </div> */}
 
                 <Zoom in={true} timeout={700}>
                 <div className="portfolio__sections">

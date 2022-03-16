@@ -12,24 +12,24 @@ function Digital() {
     }
     );
       // name = selected subcateg
-    const handleClick = (name) => {
-        let subCategoryAux = {
-            beauty: false,
-            parenting: false,
-            travel: false
-        }
-        if (!name) {
-        setSubCategoryArray(subCategoryAux)
-        } else {
-        setSubCategoryArray({
-        ...subCategoryAux,
-        [name] : true
-        })}
-    };
+    // const handleClick = (name) => {
+    //     let subCategoryAux = {
+    //         beauty: false,
+    //         parenting: false,
+    //         travel: false
+    //     }
+    //     if (!name) {
+    //     setSubCategoryArray(subCategoryAux)
+    //     } else {
+    //     setSubCategoryArray({
+    //     ...subCategoryAux,
+    //     [name] : true
+    //     })}
+    // };
 
     return (
         <Fragment>
-                <div className="portfolio__tabs">
+                {/* <div className="portfolio__tabs">
                     <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("beauty")} style={{color: subCategoryArray.beauty? "white":"", backgroundColor: subCategoryArray.beauty? "var(--first-color)":""}} >
                             Beauty
                     </div>
@@ -39,7 +39,7 @@ function Digital() {
                     <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("travel")} style={{color: subCategoryArray.travel? "white":"", backgroundColor: subCategoryArray.travel? "var(--first-color)":""}} >
                             Travel
                     </div>
-                </div>
+                </div> */}
 
                 <Zoom in={true} timeout={700}>
                 <div className="portfolio__sections">

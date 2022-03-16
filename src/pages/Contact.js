@@ -17,9 +17,9 @@ function Contact() {
             <h2 className="section__title">Contact Me</h2>
             <span className="section__subtitle">Get in touch</span>
 
-            <div className="contact__container container grid">
-                <div>
-                    <a href="+1 (917) 330-1630" >
+            <div className="contact__container container">
+                <div className="contact__wrapper">
+                    {/* <a href="+1 (917) 330-1630" >
                         <div className="contact__information">
                             <UilPhone className="contact__icon" />
 
@@ -28,20 +28,21 @@ function Contact() {
                                     <span className="contact__subtitle">+1 (917) 330-1630</span>
                             </div>
                         </div>
-                    </a>
+                    </a> */}
                     
-                    <a href="mailto:petit.vanessa@gmail.com" >
+                    <a href="mailto:vpetitwork@gmail.com" >
                     <div className="contact__information">
                     <UilEnvelopeEdit className="contact__icon" />
 
                         <div>
                             <h3 className="contact__title">Email Me</h3>
-                            <span className="contact__subtitle">petit.vanessa@gmail.com</span>
+                            <span className="contact__subtitle">vpetitwork@gmail.com</span>
                         </div>
                     </div>
                     </a>
 
                 </div>
+                {/* <div className="contact__wrapper">
                     <div className="contact__information">
                     <UilMapMarker className="contact__icon" />
 
@@ -50,6 +51,7 @@ function Contact() {
                             <span className="contact__subtitle">Oceanside, New York</span>
                         </div>
                     </div>
+                </div> */}
 
                 {/* <form action="https://formsubmit.co/juanpablorubio94@gmail.com" method="POST" className="contact__form grid" id="contact-form">
                     <div className="contact__inputs grid">

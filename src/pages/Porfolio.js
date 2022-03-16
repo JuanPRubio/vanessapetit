@@ -9,16 +9,15 @@ function Porfolio() {
     const [categoryArray, setCategoryArray] = useState({
         print: true,
         digital: false,
-        translation: false,
-        media: false}
+        translation: false
+    }
     );
       // name = selected categ
     const handleClick = (name) => {
         let categoryAux = {
         print: false,
         digital: false,
-        translation: false,
-        media: false
+        translation: false
         }
         if (!name) {
           // name = vacío -> los cierra todos
@@ -42,8 +41,6 @@ function Porfolio() {
             return <Digital />
         case 'translation':
             return <Translation />
-        case 'media':
-            return <Carousel />
         default:
             console.log("No Funciona")
             break;
@@ -55,8 +52,8 @@ function Porfolio() {
 
     return (
         <section className="portfolio section" id="portfolio">
-            <h2 className="section__title">My Work</h2>
-            <span className="section__subtitle">Most recent work</span>
+            <h2 className="section__title">Career Profile</h2>
+            <span className="section__subtitle">My work</span>
 
             <div className="portfolio__container container">
                 <div className="portfolio__tabs">
@@ -68,9 +65,6 @@ function Porfolio() {
                     </div>
                     <div className="portfolio__button button--flex" onClick={()=> handleClick("translation")} style={{color: categoryArray.translation? "white":"", backgroundColor: categoryArray.translation? "var(--first-color)":""}} >
                             Translation
-                    </div>
-                    <div className="portfolio__button button--flex" onClick={()=> handleClick("media")} style={{color: categoryArray.media? "white":"", backgroundColor: categoryArray.media? "var(--first-color)":""}} >
-                            Media
                     </div>
                 </div>
 

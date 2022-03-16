@@ -1,15 +1,15 @@
 import React, { Fragment, useState } from 'react';
 import { Zoom } from '@mui/material';
 import Card from '../../../card/Card';
-import { printFiles } from './print-files.js';
+import { beauty } from './beauty.js';
 
 function Print() {
 
     const [subCategoryArray, setSubCategoryArray] = useState({
         beauty: true,
-        parenting: false,
-        travel: false,
-        education: false,
+        fashion: false,
+        culture: false,
+        health: false,
         celebrtiy: false
     }
     );
@@ -17,9 +17,9 @@ function Print() {
     const handleClick = (name) => {
         let subCategoryAux = {
             beauty: false,
-            parenting: false,
-            travel: false,
-            education: false,
+            fashion: false,
+            culture: false,
+            health: false,
             celebrtiy: false
         }
         if (!name) {
@@ -31,30 +31,37 @@ function Print() {
         })}
     };
 
+    let currentSubcat = Object.keys(subCategoryArray).filter(function(key) {
+        return subCategoryArray[key]
+    });
+
+    console.log(currentSubcat[0]);
+
     return (
         <Fragment>
-                {/* <div className="portfolio__tabs">
+                <div className="portfolio__tabs">
                     <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("beauty")} style={{color: subCategoryArray.beauty? "white":"", backgroundColor: subCategoryArray.beauty? "var(--first-color)":""}} >
                             Beauty
                     </div>
-                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("parenting")} style={{color: subCategoryArray.parenting? "white":"", backgroundColor: subCategoryArray.parenting? "var(--first-color)":""}} >
-                            Parenting
+                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("fashion")} style={{color: subCategoryArray.fashion? "white":"", backgroundColor: subCategoryArray.fashion? "var(--first-color)":""}} >
+                            Fashion
                     </div>
-                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("travel")} style={{color: subCategoryArray.travel? "white":"", backgroundColor: subCategoryArray.travel? "var(--first-color)":""}} >
-                            Travel
+                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("culture")} style={{color: subCategoryArray.culture? "white":"", backgroundColor: subCategoryArray.culture? "var(--first-color)":""}} >
+                            Culture
                     </div>
-                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("education")} style={{color: subCategoryArray.education? "white":"", backgroundColor: subCategoryArray.education? "var(--first-color)":""}} >
-                            Education
+                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("health")} style={{color: subCategoryArray.health? "white":"", backgroundColor: subCategoryArray.health? "var(--first-color)":""}} >
+                            Health
                     </div>
                     <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("celebrity")} style={{color: subCategoryArray.celebrity? "white":"", backgroundColor: subCategoryArray.celebrity? "var(--first-color)":""}} >
                             Celebrity
                     </div>
 
-                </div> */}
+                </div>
 
                 <Zoom in={true} timeout={700}>
                 <div className="portfolio__sections">
-                {(printFiles).map((website, index) => (
+                {(beauty)?.map((website, index) => (
+                    <a href={website.route} target="_blank" rel='noreferrer'>
                     <Card
                     key={website.description}
                     hexa={website.hexa}
@@ -62,6 +69,7 @@ function Print() {
                     description={website.description}
                     image={website.image}
                     />
+                    </a>
                 ))}
                 </div>
                 </Zoom>

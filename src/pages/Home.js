@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import {
   UilLinkedinAlt,
   UilInstagram,
-  UilTwitterAlt,
   UilMessage,
   UilMouseAlt,
   UilArrowDown,
@@ -14,8 +13,10 @@ import { init } from 'ityped'
 function Home() {
   
   const profession = useRef();
+  const profession2 = useRef();
   useEffect(() => {
-      init(profession.current, { showCursor: false, backDelay: 1000,backSpeed: 60, loop: false , strings: ["Writer, Editor, Translator"] });
+      init(profession.current, { showCursor: false, typeSpeed: 75,backSpeed: 60, loop: false , strings: ["Bilingual Writer, Editor, Proofreader,"] });
+      init(profession2.current, { showCursor: false, typeSpeed: 75,backSpeed: 60, startDelay: 3500, loop: false , strings: ["Translator"] });
     }
   )
 
@@ -42,14 +43,14 @@ function Home() {
                 <UilInstagram />
               </a>
 
-              <a
+              {/* <a
                 href="https://twitter.com/home"
                 target="_blank"
                 rel="noreferrer"
                 className="home__social-icon"
               >
                 <UilTwitterAlt />
-              </a>
+              </a> */}
             </div>
 
             <div className="home__img">
@@ -91,23 +92,20 @@ function Home() {
             <div className="home__data">
               <h1 className="home__title">Hi, I'm Vanessa</h1>
               <h3 className="home__subtitle" ref={profession}>{" "}</h3>
-              <p className="home__description">
-                A versatile bilingual writer, editor and translator with over 15
-                years of experience.
-              </p>
+              <h3 className="home__subtitle2" ref={profession2}>{" "}</h3>
               <a href="#contact" className="button button--flex">
                 Contact Me <UilMessage className="button__icon" />
               </a>
             </div>
           </div>
 
-          <div className="animate__animated animate__shakeY animate__delay-4s animate__slower">
+          {/* <div className="animate__animated animate__shakeY animate__delay-4s animate__slow"> */}
             <a href="#about" className="home__scroll-button button--flex">
               <UilMouseAlt className="home__scroll-mouse" />
               <span className="home__scroll-name">Scroll down</span>
               <UilArrowDown className="home__scroll-arrow" />
             </a>
-          </div>
+          {/* </div> */}
         </div>
       </section>
   );

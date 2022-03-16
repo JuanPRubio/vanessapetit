@@ -66,6 +66,9 @@ function Porfolio() {
                     <div className="portfolio__button button--flex" onClick={()=> handleClick("translation")} style={{color: categoryArray.translation? "white":"", backgroundColor: categoryArray.translation? "var(--first-color)":""}} >
                             Translation
                     </div>
+                    <div className="portfolio__button button--flex" onClick={()=> handleClick("translation")} style={{color: categoryArray.translation? "white":"", backgroundColor: categoryArray.translation? "var(--first-color)":""}} >
+                            Ghostwriting
+                    </div>
                 </div>
 
             {renderCurrentCategory()}

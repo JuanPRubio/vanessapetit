@@ -406,6 +406,16 @@ img{
     margin-bottom: var(--mb-0-5);
 }
 
+.about__img2{
+    width: 400px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: flex-start;
+    float: left;
+    margin-right: var(--mb-1);
+    margin-bottom: var(--mb-0-5);
+}
+
 .about__description{
     text-align: justify;
     margin-bottom: var(--mb-2-5);

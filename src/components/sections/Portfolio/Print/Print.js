@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react';
 import { Zoom } from '@mui/material';
 import Card from '../../../card/Card';
 import { beauty } from './beauty.js';
+import { fashion } from './fashion.js';
 
 function Print() {
 
@@ -13,6 +14,24 @@ function Print() {
         celebrtiy: false
     }
     );
+    
+    let currentSubcat = Object.keys(subCategoryArray).filter(function(key) {
+        return subCategoryArray[key]
+    });
+    
+    let renderCurrentSubcategory = () => {
+        switch (currentSubcat[0].toString()) {
+        case 'beauty':
+            return beauty;
+        case 'fashion':
+            return fashion;
+        default:
+            console.log("No Funciona")
+            break;
+    
+        }
+    };
+
       // name = selected subcateg
     const handleClick = (name) => {
         let subCategoryAux = {
@@ -31,11 +50,9 @@ function Print() {
         })}
     };
 
-    let currentSubcat = Object.keys(subCategoryArray).filter(function(key) {
-        return subCategoryArray[key]
-    });
 
     console.log(currentSubcat[0]);
+    console.log(renderCurrentSubcategory());
 
     return (
         <Fragment>
@@ -58,9 +75,9 @@ function Print() {
 
                 </div>
 
-                <Zoom in={true} timeout={700}>
                 <div className="portfolio__sections">
-                {(beauty)?.map((website, index) => (
+                {renderCurrentSubcategory()?.map((website, index) => (
+                <Zoom in={true} timeout={700}>
                     <a href={website.route} target="_blank" rel='noreferrer'>
                     <Card
                     key={website.description}
@@ -70,9 +87,9 @@ function Print() {
                     image={website.image}
                     />
                     </a>
+                </Zoom>
                 ))}
                 </div>
-                </Zoom>
             </Fragment>
     )
 }

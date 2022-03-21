@@ -58,7 +58,7 @@ function Porfolio() {
             <div className="portfolio__container container">
                 <div className="portfolio__tabs">
                     <div className="portfolio__button button--flex" onClick={()=> handleClick("print")} style={{color: categoryArray.print? "white":"", backgroundColor: categoryArray.print? "var(--first-color)":""}} >
-                            Print
+                            Digital & Print
                     </div>
                     <div className="portfolio__button button--flex" onClick={()=> handleClick("digital")} style={{color: categoryArray.digital? "white":"", backgroundColor: categoryArray.digital? "var(--first-color)":""}} >
                             Digital

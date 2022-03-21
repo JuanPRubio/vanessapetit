@@ -18,10 +18,10 @@ import route5 from "./Beauty/SP2.pdf";
 import route6 from "./Beauty/C02_SP_WN_Booked.pdf";
 import route7 from "./Beauty/C10-Marketing_Flyer_for_QC.pdf";
 
-export const fashion = [
+export const health = [
     {
       hexa: "var(--first-color)",
-      title: "FUNCIONA GATO la espera",
+      title: "La espera",
       description: "Productos naturales para embarazos.",
       image: img1,
       route: route1

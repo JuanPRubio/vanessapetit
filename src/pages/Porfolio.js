@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Carousel from '../components/carousel/Carousel';
 import Digital from '../components/sections/Portfolio/Digital/Digital';
 import Print from '../components/sections/Portfolio/Print/Print';
 import Translation from '../components/sections/Portfolio/Translation/Translation';
@@ -8,7 +7,7 @@ function Porfolio() {
 
     const [categoryArray, setCategoryArray] = useState({
         print: true,
-        digital: false,
+        ghostwriting: false,
         translation: false
     }
     );
@@ -16,7 +15,7 @@ function Porfolio() {
     const handleClick = (name) => {
         let categoryAux = {
         print: false,
-        digital: false,
+        ghostwriting: false,
         translation: false
         }
         if (!name) {
@@ -60,13 +59,10 @@ function Porfolio() {
                     <div className="portfolio__button button--flex" onClick={()=> handleClick("print")} style={{color: categoryArray.print? "white":"", backgroundColor: categoryArray.print? "var(--first-color)":""}} >
                             Digital & Print
                     </div>
-                    <div className="portfolio__button button--flex" onClick={()=> handleClick("digital")} style={{color: categoryArray.digital? "white":"", backgroundColor: categoryArray.digital? "var(--first-color)":""}} >
-                            Digital
-                    </div>
                     <div className="portfolio__button button--flex" onClick={()=> handleClick("translation")} style={{color: categoryArray.translation? "white":"", backgroundColor: categoryArray.translation? "var(--first-color)":""}} >
                             Translation
                     </div>
-                    <div className="portfolio__button button--flex" onClick={()=> handleClick("translation")} style={{color: categoryArray.translation? "white":"", backgroundColor: categoryArray.translation? "var(--first-color)":""}} >
+                    <div className="portfolio__button button--flex" onClick={()=> handleClick("ghostwriting")} style={{color: categoryArray.ghostwriting? "white":"", backgroundColor: categoryArray.ghostwriting? "var(--first-color)":""}} >
                             Ghostwriting
                     </div>
                 </div>

@@ -2,6 +2,10 @@ import React, { Fragment, useState } from 'react';
 import { Zoom } from '@mui/material';
 import Card from '../../../card/Card';
 import { beauty } from './beauty.js';
+import { travel } from './travel.js';
+import { health } from './health.js';
+import { culture } from './culture.js';
+import { celebrity } from './celebrity.js';
 import { fashion } from './fashion.js';
 
 function Print() {
@@ -11,7 +15,7 @@ function Print() {
         fashion: false,
         culture: false,
         health: false,
-        celebrtiy: false
+        travel: false
     }
     );
     
@@ -25,6 +29,14 @@ function Print() {
             return beauty;
         case 'fashion':
             return fashion;
+        case 'travel':
+            return travel;
+        case 'culture':
+            return culture;
+        case 'health':
+            return health;
+        case 'celebrity':
+            return celebrity;
         default:
             console.log("No Funciona")
             break;
@@ -39,7 +51,7 @@ function Print() {
             fashion: false,
             culture: false,
             health: false,
-            celebrtiy: false
+            travel: false
         }
         if (!name) {
         setSubCategoryArray(subCategoryAux)
@@ -69,8 +81,8 @@ function Print() {
                     <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("health")} style={{color: subCategoryArray.health? "white":"", backgroundColor: subCategoryArray.health? "var(--first-color)":""}} >
                             Health
                     </div>
-                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("celebrity")} style={{color: subCategoryArray.celebrity? "white":"", backgroundColor: subCategoryArray.celebrity? "var(--first-color)":""}} >
-                            Celebrity
+                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("travel")} style={{color: subCategoryArray.travel? "white":"", backgroundColor: subCategoryArray.travel? "var(--first-color)":""}} >
+                            Travel
                     </div>
 
                 </div>

@@ -6,7 +6,7 @@ import "../../../../App.css";
 export const translationFiles = [
     {
       hexa: "var(--first-color-lighter)",
-      title: "The dream of being a legal resident",
+      title: "Moroccan Oil",
       description: "Problemáticas que de los inmigrantes indocumentados.",
       image: img2
     },

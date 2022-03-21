@@ -28,19 +28,6 @@ function Translation() {
 
     return (
         <Fragment>
-                {/* <div className="portfolio__tabs">
-                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("parenting")} style={{color: subCategoryArray.parenting? "var(--first-color)":""}} >
-                            Parenting
-                    </div>
-                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("business")} style={{color: subCategoryArray.business? "var(--first-color)":""}} >
-                            Business
-                    </div>
-                    <div className="portfolio__subcat__button button--flex" onClick={()=> handleClick("press")} style={{color: subCategoryArray.press? "var(--first-color)":""}} >
-                            Press
-                    </div>
-
-                </div> */}
-
                 <Zoom in={true} timeout={700}>
                 <div className="portfolio__sections">
                 {(translationFiles).map((website, index) => (

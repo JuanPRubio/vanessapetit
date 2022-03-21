@@ -7,7 +7,7 @@ const transition = "all 0.45s ease";
 
 const Screenshot = styled.figure`
   z-index: var(--z-tooltip);
-  position: relative;
+  position: center;
   margin: 0;
   padding: 0;
   width: ${cardWidth-4}px;

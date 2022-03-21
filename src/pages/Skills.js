@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { UilEnglishToChinese, UilAngleDown, UilFileEditAlt, UilEditAlt, UilSearch } from '@iconscout/react-unicons';
+import { UilEnglishToChinese, UilAngleRight, UilFileEditAlt, UilEditAlt, UilSearch } from '@iconscout/react-unicons';
 import Collapse from '@mui/material/Collapse';
 
 function Skills() {

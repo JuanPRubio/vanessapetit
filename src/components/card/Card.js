@@ -13,7 +13,8 @@ const Screenshot = styled.figure`
   width: ${cardWidth-4}px;
   height: 200px;
   background: url(${(props) => props.image}) 0 0 no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   border-radius: ${borderRadius}px ${borderRadius}px 0 0;
   overflow: hidden;
   backface-visibility: hidden;

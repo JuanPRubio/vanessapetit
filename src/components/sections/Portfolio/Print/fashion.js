@@ -12,7 +12,7 @@ import img6 from "./Fashion/fallblack&white.JPG";
 import route1 from "./Fashion/3FASHN.pdf";
 import route2 from "./Fashion/3FASHN_2.pdf";
 import route3 from "./Fashion/3FASHN_3.pdf";
-import route4 from "./Fashion/esperafall13.jpg";
+import route4 from "./Fashion/esperafall13.JPG";
 import route5 from "./Fashion/esperasummerfas.pdf";
 import route6 from "./Fashion/fallblack&white.pdf";
 

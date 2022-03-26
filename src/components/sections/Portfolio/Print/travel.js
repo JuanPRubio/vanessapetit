@@ -1,72 +1,54 @@
 import "../../../../App.css";
 
 //Images
-import img1 from "./Beauty/durante_la_espera.JPG";
-import img2 from "./Beauty/SM1.JPG";
-import img3 from "./Beauty/SM2.JPG";
-import img4 from "./Beauty/SP1.JPG";
-import img5 from "./Beauty/SP2.JPG";
-import img6 from "./Beauty/C02_SP_WN_Booked.JPG";
-import img7 from "./Beauty/C10-Marketing_Flyer_for_QC.JPG";
+import img1 from "./Travel/Marriot1.JPG";
+import img2 from "./Travel/Marriot2.JPG";
+import img3 from "./Travel/Marriot3.JPG";
+import img4 from "./Travel/Marriot4.JPG";
+import img5 from "./Travel/Marriot.JPG";
 
 //Routes
-import route1 from "./Beauty/espera.jpg";
-import route2 from "./Beauty/SM1.pdf";
-import route3 from "./Beauty/SM2.pdf";
-import route4 from "./Beauty/SP1.pdf";
-import route5 from "./Beauty/SP2.pdf";
-import route6 from "./Beauty/C02_SP_WN_Booked.pdf";
-import route7 from "./Beauty/C10-Marketing_Flyer_for_QC.pdf";
+const route1 = "https://traveler.marriott.com/es/cultura-estilo/tradiciones-detras-de-estos-carnavales-de-latinoamerica/";
+const route2 = "https://traveler.marriott.com/es/cultura-estilo/colonia-del-sacramento-en-semana-santa-un-viaje-al-pasado/";
+const route3 = "https://traveler.marriott.com/es/cultura-estilo/sitios-cafetaleros-de-guanacaste/";
+const route4 = "https://traveler.marriott.com/es/consejos-tendencias/vive-la-salsa-en-cali-al-ritmo-de-los-timbales-y-de-las-trompetas/";
+const route5 = "https://traveler.marriott.com/es/cultura-estilo/descubre-el-lado-cultural-de-cali-a-traves-de-estos-cinco-museos-que-debes-visitar/";
 
 export const travel = [
     {
       hexa: "var(--first-color)",
-      title: "La espera",
-      description: "Productos naturales para embarazos.",
+      title: "Marriot Travel",
+      description: "Latinamerican Carnivals.",
       image: img1,
       route: route1
     },
     {
       hexa: "var(--first-color-lighter)",
-      title: "Primer Plano",
-      description: "Aprendiendo a cuidar nuestro rostro.",
+      title: "Marriot Travel",
+      description: "Colonia del Sacramento.",
       image: img2,
       route: route2
     },
     {
       hexa: "var(--first-color-alt)",
-      title: "La reina del show",
-      description: "Guía de productos para convertirse en diva.",
+      title: "Marriot Travel",
+      description: "Coffe places at Guanacaste",
       image: img3,
       route: route3
     },
     {
       hexa: "var(--first-color)",
-      title: "Bonita y Natural",
-      description: "Productos naturales para el cuidado personal.",
+      title: "Marriot Travel",
+      description: "Salsa at Cali.",
       image: img4,
       route: route4
     },
     {
       hexa: "var(--first-color-lighter)",
-      title: "Para ti",
-      description: "Tips de belleza y cuidado personal.",
+      title: "Marriot Travel",
+      description: "Museums at Cali.",
       image: img5,
       route: route5
-    },
-    {
-      hexa: "var(--first-color)",
-      title: "Qué hay de nuevo",
-      description: "Cuidado innovador para piel sensible.",
-      image: img6,
-      route: route6
-    },
-    {
-      hexa: "var(--first-color)",
-      title: "Suaviza y calma",
-      description: "Guía para darle el amor que tu piel necesita.",
-      image: img7,
-      route: route7
     }
   ]
   

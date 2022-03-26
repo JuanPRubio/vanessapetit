@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Digital from '../components/sections/Portfolio/Digital/Digital';
 import Print from '../components/sections/Portfolio/Print/Print';
 import Translation from '../components/sections/Portfolio/Translation/Translation';
 
@@ -36,8 +35,8 @@ function Porfolio() {
         switch (currentCategory.toString()) {
         case 'print':
             return <Print />
-        case 'digital':
-            return <Digital />
+        // case 'digital':
+        //     return <Digital />
         case 'translation':
             return <Translation />
         default:
@@ -57,7 +56,7 @@ function Porfolio() {
             <div className="portfolio__container container">
                 <div className="portfolio__tabs">
                     <div className="portfolio__button button--flex" onClick={()=> handleClick("print")} style={{color: categoryArray.print? "white":"", backgroundColor: categoryArray.print? "var(--first-color)":""}} >
-                            Digital & Print
+                            Digital
                     </div>
                     <div className="portfolio__button button--flex" onClick={()=> handleClick("translation")} style={{color: categoryArray.translation? "white":"", backgroundColor: categoryArray.translation? "var(--first-color)":""}} >
                             Translation

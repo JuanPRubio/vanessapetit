@@ -15,8 +15,8 @@ function Home() {
   const profession = useRef();
   const profession2 = useRef();
   useEffect(() => {
-      init(profession.current, { showCursor: false, typeSpeed: 75,backSpeed: 60, loop: false , strings: ["Bilingual Writer, Editor, Proofreader,"] });
-      init(profession2.current, { showCursor: false, typeSpeed: 75,backSpeed: 60, startDelay: 3500, loop: false , strings: ["Translator"] });
+      init(profession.current, { showCursor: false, typeSpeed: 75,backSpeed: 60, loop: false , strings: ["Bilingual Writer, Copy/Editor,"] });
+      init(profession2.current, { showCursor: false, typeSpeed: 75,backSpeed: 60, startDelay: 3000, loop: false , strings: ["Proofreader, Translator"] });
     }
   )
 

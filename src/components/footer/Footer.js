@@ -1,8 +1,7 @@
 import React from "react";
 import {
-  UilFacebookF,
   UilInstagram,
-  UilTwitterAlt,
+  UilLinkedinAlt
 } from "@iconscout/react-unicons";
 
 function Footer() {
@@ -11,18 +10,26 @@ function Footer() {
       <div className="footer__bg">
         <div className="footer__container container grid">
           <div>
-            <h1 className="footer__title">Vanessa</h1>
-            <span className="footer__subtitle">Writer, Editor, Translator</span>
+            <h1 className="footer__title"><a href="#home" className="footer__title">
+            Vanessa
+            </a>
+            </h1>
+            <span className="footer__subtitle">Bilingual Writer, Copy/Editor, Proofreader, Translator</span>
           </div>
 
           <ul className="footer__links">
             <li>
-              <a href="#services" className="footer__link">
-                Services
+              <a href="#about" className="footer__link">
+                About
               </a>
             </li>
             <li>
-              <a href="#portfollio" className="footer__link">
+              <a href="#skills" className="footer__link">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" className="footer__link">
                 Portfolio
               </a>
             </li>
@@ -35,12 +42,12 @@ function Footer() {
 
           <div className="footer__socials">
             <a
-              href="https://www.facebook.com/vanessa.petit.12"
+              href="https://www.linkedin.com/in/vanessa-petit-662b3172/"
               target="_blank"
               rel="noreferrer"
               className="footer__social"
             >
-              <UilFacebookF className="" />
+              <UilLinkedinAlt className="" />
             </a>
             <a
               href="https://www.instagram.com/vanempetit/"
@@ -49,14 +56,6 @@ function Footer() {
               className="footer__social"
             >
               <UilInstagram className="" />
-            </a>
-            <a
-              href="https://twitter.com/home"
-              target="_blank"
-              rel="noreferrer"
-              className="footer__social"
-            >
-              <UilTwitterAlt className="" />
             </a>
           </div>
         </div>

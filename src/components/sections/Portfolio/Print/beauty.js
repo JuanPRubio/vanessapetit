@@ -27,35 +27,35 @@ export const beauty = [
       route: route6
     },
     {
-      hexa: "var(--first-color)",
+      hexa: "var(--first-color-lighter)",
       title: "Suaviza y calma",
       description: "Guía para darle el amor que tu piel necesita.",
       image: img7,
       route: route7
     },
     {
-      hexa: "var(--first-color-lighter)",
+      hexa: "var(--first-color-alt)",
       title: "Primer Plano",
       description: "Aprendiendo a cuidar nuestro rostro.",
       image: img2,
       route: route2
     },
     {
-      hexa: "var(--first-color-alt)",
+      hexa: "var(--first-color)",
       title: "La reina del show",
       description: "Guía de productos para convertirse en diva.",
       image: img3,
       route: route3
     },
     {
-      hexa: "var(--first-color)",
+      hexa: "var(--first-color-lighter)",
       title: "Bonita y Natural",
       description: "Productos naturales para el cuidado personal.",
       image: img4,
       route: route4
     },
     {
-      hexa: "var(--first-color-lighter)",
+      hexa: "var(--first-color-alt)",
       title: "Para ti",
       description: "Tips de belleza y cuidado personal.",
       image: img5,

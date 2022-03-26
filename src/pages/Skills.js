@@ -27,21 +27,57 @@ function Skills() {
 
             <div className="skills__container container grid">
                 <div>
-                    {/* <!--=========================== SKILL 1 ===========================--> */}
+                    {/* <!--=========================== SKILL 2 ===========================--> */}
                     <div className="skills__content">
                             <div className="skills__list grid">
                                 <div className="skills__data">
                                     <div className="skills__titles">
-                                        <h3 className="skills__name">English to Spanish/ Spanish to English</h3>
+                                        <h3 className="skills__name">Content Development Spanish/English</h3>
                                     </div>
                                     <div className="skills__bar">
                                         <span className="skills__percentage skills__entoes"></span>
                                     </div>
                                 </div>
+
+                                <div className="skills__data">
+                                    <div className="skills__titles">
+                                        <h3 className="skills__name">Translations/ Transcreation </h3>
+                                    </div>
+                                    <div className="skills__bar">
+                                        <span className="skills__percentage skills__transc"></span>
+                                    </div>
+                                </div>
                                 
                                 <div className="skills__data">
                                     <div className="skills__titles">
-                                        <h3 className="skills__name">Transcription</h3>
+                                        <h3 className="skills__name">Interviewing/ Reporting</h3>
+                                    </div>
+                                    <div className="skills__bar">
+                                        <span className="skills__percentage skills__transc"></span>
+                                    </div>
+                                </div>
+
+                                <div className="skills__data">
+                                    <div className="skills__titles">
+                                        <h3 className="skills__name">Feature writing</h3>
+                                    </div>
+                                    <div className="skills__bar">
+                                        <span className="skills__percentage skills__transc"></span>
+                                    </div>
+                                </div>
+
+                                <div className="skills__data">
+                                    <div className="skills__titles">
+                                        <h3 className="skills__name">Proofreading</h3>
+                                    </div>
+                                    <div className="skills__bar">
+                                        <span className="skills__percentage skills__transc"></span>
+                                    </div>
+                                </div>
+
+                                <div className="skills__data">
+                                    <div className="skills__titles">
+                                        <h3 className="skills__name">Copyediting</h3>
                                     </div>
                                     <div className="skills__bar">
                                         <span className="skills__percentage skills__transc"></span>
@@ -51,8 +87,8 @@ function Skills() {
                     </div>
                 </div>
 
+                    {/* <!--=========================== SKILL COL 2 ===========================--> */}
                 <div>
-                    {/* <!--=========================== SKILL 4 ===========================--> */}
                     {/* <div className="skills__content">
                         <div className="skills__header" onClick={() => handleClickSkills("skills_4")}>
                             <UilSearch className="skills__icon" />
@@ -68,10 +104,19 @@ function Skills() {
 
                         <Collapse in={skillsArray.skills_4} > */}
                         <div className="skills__list grid">
+
                             <div className="skills__data">
                                 <div className="skills__titles">
-                                    <h3 className="skills__name">Content Creation: online, blog, magazines, newspapers</h3>
-                                    {/* <span className="skills__number">100%</span> */}
+                                    <h3 className="skills__name">Newsletter</h3>
+                                </div>
+                                <div className="skills__bar">
+                                    <span className="skills__percentage skills__editing"></span>
+                                </div>
+                            </div>
+                        
+                            <div className="skills__data">
+                                <div className="skills__titles">
+                                    <h3 className="skills__name">Book Translation</h3>
                                 </div>
                                 <div className="skills__bar">
                                     <span className="skills__percentage skills__editing"></span>
@@ -80,8 +125,7 @@ function Skills() {
                             
                             <div className="skills__data">
                                 <div className="skills__titles">
-                                    <h3 className="skills__name">Newsletters</h3>
-                                    {/* <span className="skills__number">100%</span> */}
+                                    <h3 className="skills__name">Adaptation/Localization</h3>
                                 </div>
                                 <div className="skills__bar">
                                     <span className="skills__percentage skills__proof"></span>
@@ -90,8 +134,7 @@ function Skills() {
 
                             <div className="skills__data">
                                 <div className="skills__titles">
-                                    <h3 className="skills__name">Press Releases</h3>
-                                    {/* <span className="skills__number">100%</span> */}
+                                    <h3 className="skills__name">Research & Fact Checking</h3>
                                 </div>
                                 <div className="skills__bar">
                                     <span className="skills__percentage skills__adapt"></span>
@@ -100,8 +143,16 @@ function Skills() {
 
                             <div className="skills__data">
                                 <div className="skills__titles">
-                                    <h3 className="skills__name">Brochures/ Promotional Materials/ Advertorialss</h3>
-                                    {/* <span className="skills__number">100%</span> */}
+                                    <h3 className="skills__name">Biography Drafting/writing</h3>
+                                </div>
+                                <div className="skills__bar">
+                                    <span className="skills__percentage skills__adapt"></span>
+                                </div>
+                            </div>
+
+                            <div className="skills__data">
+                                <div className="skills__titles">
+                                    <h3 className="skills__name">Social media marketing campaigns</h3>
                                 </div>
                                 <div className="skills__bar">
                                     <span className="skills__percentage skills__adapt"></span>

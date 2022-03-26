@@ -1,70 +1,70 @@
 import "../../../../App.css";
 
 //Images
-import img1 from "./Beauty/durante_la_espera.JPG";
-import img2 from "./Beauty/SM1.JPG";
-import img3 from "./Beauty/SM2.JPG";
-import img4 from "./Beauty/SP1.JPG";
-import img5 from "./Beauty/SP2.JPG";
-import img6 from "./Beauty/C02_SP_WN_Booked.JPG";
-import img7 from "./Beauty/C10-Marketing_Flyer_for_QC.JPG";
+import img1 from "./Health/01SEXED.JPG";
+import img2 from "./Health/3GATES.JPG";
+import img3 from "./Health/amamantar.JPG";
+import img4 from "./Health/BOARD.JPG";
+import img5 from "./Health/CHILH1.JPG";
+import img6 from "./Health/CHILH2.JPG";
+import img7 from "./Health/CHILH.JPG";
 
 //Routes
-import route1 from "./Beauty/espera.jpg";
-import route2 from "./Beauty/SM1.pdf";
-import route3 from "./Beauty/SM2.pdf";
-import route4 from "./Beauty/SP1.pdf";
-import route5 from "./Beauty/SP2.pdf";
-import route6 from "./Beauty/C02_SP_WN_Booked.pdf";
-import route7 from "./Beauty/C10-Marketing_Flyer_for_QC.pdf";
+import route1 from "./Health/01SEXED.pdf";
+import route2 from "./Health/3GATES.pdf";
+import route3 from "./Health/amamantar.pdf";
+import route4 from "./Health/BOARD.pdf";
+import route5 from "./Health/CHILH1.pdf";
+import route6 from "./Health/CHILH2.pdf";
+import route7 from "./Health/CHILH.pdf";
 
 export const health = [
     {
       hexa: "var(--first-color)",
-      title: "La espera",
-      description: "Productos naturales para embarazos.",
+      title: "SerPadres.com",
+      description: "Let's talk abput sex.",
       image: img1,
       route: route1
     },
     {
       hexa: "var(--first-color-lighter)",
-      title: "Primer Plano",
-      description: "Aprendiendo a cuidar nuestro rostro.",
+      title: "SerPadres.com",
+      description: "My life as a mother.",
       image: img2,
       route: route2
     },
     {
       hexa: "var(--first-color-alt)",
-      title: "La reina del show",
-      description: "Guía de productos para convertirse en diva.",
+      title: "SerPadres.com",
+      description: "Public breast-feed.",
       image: img3,
       route: route3
     },
     {
       hexa: "var(--first-color)",
-      title: "Bonita y Natural",
-      description: "Productos naturales para el cuidado personal.",
+      title: "SerPadres.com",
+      description: "Be a happy mom.",
       image: img4,
       route: route4
     },
     {
       hexa: "var(--first-color-lighter)",
-      title: "Para ti",
-      description: "Tips de belleza y cuidado personal.",
+      title: "SerPadres.com",
+      description: "Let them play.",
       image: img5,
       route: route5
     },
     {
       hexa: "var(--first-color)",
-      title: "Qué hay de nuevo",
-      description: "Cuidado innovador para piel sensible.",
+      title: "SerPadres.com",
+      description: "Be safe.",
       image: img6,
       route: route6
     },
     {
       hexa: "var(--first-color)",
-      title: "Suaviza y calma",
-      description: "Guía para darle el amor que tu piel necesita.",
+      title: "SerPadres.com",
+      description: "Medicine poisoning.",
       image: img7,
       route: route7
     }

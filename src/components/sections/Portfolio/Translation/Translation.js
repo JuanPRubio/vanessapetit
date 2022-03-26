@@ -1,6 +1,6 @@
 import { Zoom } from '@mui/material';
 import React, { Fragment, useState } from 'react';
-import Card from '../../../card/Card';
+import Card from '../../../card/Card2';
 import { translationFiles } from './translation-files.js';
 
 function Translation() {

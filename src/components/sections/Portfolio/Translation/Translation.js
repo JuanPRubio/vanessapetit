@@ -1,30 +1,9 @@
 import { Zoom } from '@mui/material';
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import Card from '../../../card/Card2';
 import { translationFiles } from './translation-files.js';
 
 function Translation() {
-
-    const [subCategoryArray, setSubCategoryArray] = useState({
-        parenting: true,
-        business: false,
-        press: false}
-    );
-      // name = selected subcateg
-    const handleClick = (name) => {
-        let subCategoryAux = {
-            parenting: false,
-            business: false,
-            press: false
-        }
-        if (!name) {
-        setSubCategoryArray(subCategoryAux)
-        } else {
-        setSubCategoryArray({
-        ...subCategoryAux,
-        [name] : true
-        })}
-    };
 
     return (
         <Fragment>

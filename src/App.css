@@ -492,7 +492,7 @@ img{
 
 .skills__list{
     row-gap: 1.5rem;
-    padding-left: 2.7rem;
+    /* padding-left: 2.7rem; */
 }
 
 .skills__titles{

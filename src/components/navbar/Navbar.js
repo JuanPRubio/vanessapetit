@@ -3,7 +3,6 @@ import {
   UilEstate,
   UilUser,
   UilFileAlt,
-  UilBriefcaseAlt,
   UilScenery,
   UilMessage,
   UilTimes,
@@ -99,11 +98,6 @@ function Navbar() {
                   <UilFileAlt className="nav__icon" /> Skills
                 </a>
               </li>
-              {/* <li className="nav__item">
-                <a href="#qualification" className="nav__link" onClick={handleClickNav}>
-                  <UilBriefcaseAlt className="nav__icon" /> Qualifications
-                </a>
-              </li> */}
               <li className="nav__item">
                 <a href="#portfolio" className="nav__link" onClick={handleClickNav}>
                   <UilScenery className="nav__icon" /> Portfolio

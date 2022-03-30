@@ -14,7 +14,7 @@ function Footer() {
             Vanessa
             </a>
             </h1>
-            <span className="footer__subtitle">Bilingual Writer, Copy/Editor, Proofreader, Translator</span>
+            <span className="footer__subtitle">Bilingual Writer, Copyeditor, Proofreader, Translator</span>
           </div>
 
           <ul className="footer__links">

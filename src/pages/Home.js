@@ -15,7 +15,7 @@ function Home() {
   const profession = useRef();
   const profession2 = useRef();
   useEffect(() => {
-      init(profession.current, { showCursor: false, typeSpeed: 75,backSpeed: 60, loop: false , strings: ["Bilingual Writer, Copy/Editor,"] });
+      init(profession.current, { showCursor: false, typeSpeed: 75,backSpeed: 60, loop: false , strings: ["Bilingual Writer, Copyeditor,"] });
       init(profession2.current, { showCursor: false, typeSpeed: 75,backSpeed: 60, startDelay: 3000, loop: false , strings: ["Proofreader, Translator"] });
     }
   )
@@ -82,8 +82,8 @@ function Home() {
                     href={ProfileImg}
                     // y='25'
                     // x='-115'
-                    y='8'
-                    x='10'
+                    y='2'
+                    x='5'
                   />
                 </g>
               </svg>

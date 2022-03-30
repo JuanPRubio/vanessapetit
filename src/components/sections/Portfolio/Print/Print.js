@@ -62,10 +62,6 @@ function Print() {
         })}
     };
 
-
-    console.log(currentSubcat[0]);
-    console.log(renderCurrentSubcategory());
-
     return (
         <Fragment>
                 <div className="portfolio__tabs">

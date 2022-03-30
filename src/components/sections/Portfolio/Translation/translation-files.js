@@ -14,63 +14,51 @@ import img12 from "./stroyTerrace.svg";
 
 export const translationFiles = [
     {
-      hexa: "var(--first-color-lighter)",
-      title: "American Heart Assosiaton",
+      hexa: "var(--first-color)",
       image: img1
     },
     {
-      hexa: "var(--first-color)",
-      title: "American Baby",
-      image: img2
-    },
-    {
-      hexa: "var(--first-color-alt)",
-      title: "Assosiated Press",
-      image: img3
-    },
-    {
       hexa: "var(--first-color-lighter)",
-      title: "Avon",
       image: img4
     },
     {
-      hexa: "var(--first-color)",
-      title: "AVON",
-      image: img5
+      hexa: "var(--first-color-alt)",
+      image: img12
     },
     {
-      hexa: "var(--first-color-alt)",
-      title: "Bebé",
+      hexa: "var(--first-color)",
       image: img6
     },
     {
       hexa: "var(--first-color-lighter)",
-      title: "Common Sense Media",
-      image: img7
+      image: img9
+    },
+    {
+      hexa: "var(--first-color-alt)",
+      image: img11
     },
     {
       hexa: "var(--first-color)",
-      title: "Espera",
+      image: img2
+    },
+    {
+      hexa: "var(--first-color-lighter)",
+      image: img3
+    },
+    {
+      hexa: "var(--first-color-alt)",
+      image: img5
+    },
+    {
+      hexa: "var(--first-color)",
+      image: img7
+    },
+    {
+      hexa: "var(--first-color-lighter)",
       image: img8
     },
     {
       hexa: "var(--first-color-alt)",
-      title: "Mamá y Bebé",
-      image: img9
-    },
-    {
-      hexa: "var(--first-color-lighter)",
-      title: "Moroccan Oil",
       image: img10
-    },
-    {
-      hexa: "var(--first-color)",
-      title: "Ser Padres",
-      image: img11
-    },
-    {
-      hexa: "var(--first-color-alt)",
-      title: "Signs of Success",
-      image: img12
     }
 ]

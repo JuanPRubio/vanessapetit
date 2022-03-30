@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import GhostWriting from '../components/sections/Portfolio/GhostWriting/GhostWriting';
 import Print from '../components/sections/Portfolio/Print/Print';
 import Translation from '../components/sections/Portfolio/Translation/Translation';
 
@@ -35,18 +36,16 @@ function Porfolio() {
         switch (currentCategory.toString()) {
         case 'print':
             return <Print />
-        // case 'digital':
-        //     return <Digital />
+        case 'ghostwriting':
+            return <GhostWriting />
         case 'translation':
             return <Translation />
         default:
-            console.log("No Funciona")
+            console.error("No Funciona el RenderCurrentCategory")
             break;
     
         }
     };
-
-    console.log(currentCategory.toString() + 'Files');
 
     return (
         <section className="portfolio section" id="portfolio">
@@ -59,7 +58,7 @@ function Porfolio() {
                             Digital
                     </div>
                     <div className="portfolio__button button--flex" onClick={()=> handleClick("translation")} style={{color: categoryArray.translation? "white":"", backgroundColor: categoryArray.translation? "var(--first-color)":""}} >
-                            Translation
+                            Translations
                     </div>
                     <div className="portfolio__button button--flex" onClick={()=> handleClick("ghostwriting")} style={{color: categoryArray.ghostwriting? "white":"", backgroundColor: categoryArray.ghostwriting? "var(--first-color)":""}} >
                             Ghostwriting

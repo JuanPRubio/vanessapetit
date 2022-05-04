@@ -35,7 +35,7 @@ function Home() {
               </a>
 
               <a
-                href="https://www.instagram.com/vanempetit/"
+                href="https://www.instagram.com/vanessampetit/"
                 target="_blank"
                 rel="noreferrer"
                 className="home__social-icon"

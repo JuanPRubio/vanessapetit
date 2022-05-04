@@ -50,7 +50,7 @@ function Footer() {
               <UilLinkedinAlt className="" />
             </a>
             <a
-              href="https://www.instagram.com/vanempetit/"
+              href="https://www.instagram.com/vanessampetit/"
               target="_blank"
               rel="noreferrer"
               className="footer__social"

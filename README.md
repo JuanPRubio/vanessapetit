@@ -22,3 +22,8 @@ I'll be refactoring some sections so stay tuned for next updates.
 
 You can `fork` this repo and use it like a **FREE WEBSITE PORTFOLIO TEMPLATE** or follow this tutorial create it from scratch.
 
+## Preview
+
+ <img src="https://repository-images.githubusercontent.com/425956305/88744d1f-9325-48de-a388-f9e9ace1c9ce" alt="vanessapetit preview"/>
+
+

@@ -60,7 +60,11 @@ function Footer() {
           </div>
         </div>
 
-        <p className="footer__copy">Made by JPR&#174; All right reserved</p>
+        <a href="mailto:juanpablorubio94@gmail.com" >
+        <p className="footer__copy">
+        Made by JPR&#174; All right reserved
+        </p>
+        </a>
       </div>
     </footer>
   );
